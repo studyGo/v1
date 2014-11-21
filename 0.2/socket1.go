@@ -36,7 +36,6 @@ func handleClient(conn net.Conn) {
             break
         } else {
             fmt.Printf("read %s", request[0:])
-
             conn.Write([]byte("this is a write"))
         }
     }
